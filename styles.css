@@ -149,7 +149,7 @@ nav {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding: 4em;
 }
 
@@ -158,7 +158,20 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    height: 100vh;
+    justify-content: center;
 }
+
+.social-media-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5em;
+}
+
+.fa-github, .fa-linkedin, .fa-twitter {
+    font-size: 2rem;
+}
+
 
 h1, h3 {
     color: white;
@@ -252,6 +265,10 @@ h1:hover {
 
 @media screen and (max-width:760px) {
     .site-links {
+        display: none;
+    }
+
+    .social-media-icons {
         display: none;
     }
 }

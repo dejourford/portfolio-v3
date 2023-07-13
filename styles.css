@@ -55,6 +55,12 @@ a {
     cursor: pointer;
 }
 
+.close-btn {
+    padding: 1em;
+    background: transparent;
+    border: none;
+}
+
 .mobile-links {
     display: flex;
     flex-direction: column;

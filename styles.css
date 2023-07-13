@@ -63,6 +63,7 @@ a {
     font-size: 1.3rem;
     color: white ;
     transform: translateY(100px);
+    letter-spacing: 0.1rem;
 }
 
 .contact-btn {

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monsterrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 900;
+}
+
+h3, h5 {
+    font-weight: 400;
+}
+

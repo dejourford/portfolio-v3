@@ -1,3 +1,7 @@
+Key:
+[] = Task Done
+() = Task Started
+
 -->Color Scheme<--
 Primary Color --> Black rgb(33, 37, 41)
 Text Color --> Light Gray rgb(177, 182, 185)
@@ -14,4 +18,5 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Permanent Marker', cursive;
 
 
-1. Work on Navigation for portfolio [07/13/2023]
+1. Work on Navigation for portfolio (07/12/2023)
+    -Mobile Navigation [07/13/2023]

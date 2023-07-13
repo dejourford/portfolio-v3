@@ -194,6 +194,55 @@ h1:hover {
     margin-top: 50px;
 }
 
+/* about section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 4em;
+    background: rgb(18, 18, 19);
+    gap: 4em;
+}
+
+.about-section-left {
+}
+
+.about-section-left img {
+    height: 350px;
+}
+
+.selfie {
+    border:5px solid #00BFB2;
+    border-radius: 50%;
+    background: lightgray;
+}
+
+.about-section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    width: 50%;
+}
+
+.about-section-header {
+    font-size: 4rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;'
+}
+
+.about-section-text {
+    color: lightgray;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    text-align: justify;
+}
+
+.download-resume-btn {
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+
 /* media queries */
 @media screen and (min-width:760px) {
     .fa-bars {

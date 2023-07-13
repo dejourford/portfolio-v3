@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
 body {
     font-family: 'Monsterrat', sans-serif;
 }

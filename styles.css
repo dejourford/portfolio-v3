@@ -11,6 +11,7 @@ html {
 
 body {
     font-family: 'Monsterrat', sans-serif;
+    background: black;
 }
 
 h1 {
@@ -31,20 +32,30 @@ a {
     color: inherit;
 }
 
+/* navigation scroll */
+nav {
+    position: sticky;
+    box-shadow: 0px 3px 9px rgb(0, 0, 0, 0.7);
+}
+
 /* mobile navigation */
 .mobile-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(0, 0, 0, 0.93);
+    justify-content: center;
     height: 100vh;
-    position: relative;
-    right: -1000px;
-    transition: 0.3s ease-in-out;
+    width: 100%;
+    position: absolute;
+    top: -2000px;
+    transition: 0.5s ease-in-out;
+    z-index: 1000;
 }
    
 .active {
-    right: 0;
+    top: 0;
+    transition: 0.3s ease;
+    background: rgb(33, 37, 41);
 }
 
 .fa-xmark {
@@ -66,9 +77,8 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 1em;
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: white ;
-    transform: translateY(100px);
     letter-spacing: 0.1rem;
 }
 
@@ -76,10 +86,73 @@ a {
     padding: 0.6em 2.3em;
     border-radius: 4em;
     border: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
     background: #00BFB2;
     color: white;
     cursor: pointer;
 }
 
+.contact-btn:hover {
+    opacity: 85%;
+}
+
+/* site navigation */
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.open-btn {
+    border: none;
+}
+
+.fa-bars {
+    /* position: absolute;
+    right: 20px;
+    top: 30px; */
+    font-size: 2rem;
+    color:white;
+    cursor: pointer;
+    background: black;
+}
+
+.logo {
+    color: #00BFB2;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.right-side-nav {
+
+}
+
+.site-links {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.site-links li:hover {
+    color: #00BFB2;
+}
+
+/* media queries */
+@media screen and (min-width:760px) {
+    .fa-bars {
+        display: none;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .site-links {
+        display: none;
+    }
+}

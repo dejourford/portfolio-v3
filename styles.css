@@ -22,3 +22,58 @@ h3, h5 {
     font-weight: 400;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* mobile navigation */
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(33, 37, 41);
+    height: 100vh;
+    position: relative;
+    left: 1000px;
+}
+   
+.active {
+    left: 0;
+}
+
+.fa-xmark {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 2rem;
+    color:rgb(177, 182, 185);
+    cursor: pointer;
+}
+
+.mobile-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: rgb(8, 3, 4) ;
+    transform: translateY(100px);
+}
+
+.contact-btn {
+    padding: 0.6em 2.3em;
+    border-radius: 4em;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background: rgb(177, 182, 185);
+    color: rgb(8, 3, 4);
+    cursor: pointer;
+}
+

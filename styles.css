@@ -191,7 +191,7 @@ h1:hover {
 }
 
 .work-btn {
-    transform: translateY(30px)
+    margin-top: 50px;
 }
 
 /* media queries */

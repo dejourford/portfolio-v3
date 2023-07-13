@@ -82,7 +82,7 @@ nav {
     letter-spacing: 0.1rem;
 }
 
-.contact-btn {
+.primary-btn {
     padding: 0.6em 2.3em;
     border-radius: 4em;
     border: none;
@@ -93,7 +93,7 @@ nav {
     cursor: pointer;
 }
 
-.contact-btn:hover {
+.primary-btn:hover {
     opacity: 85%;
 }
 
@@ -142,6 +142,56 @@ nav {
 
 .site-links li:hover {
     color: #00BFB2;
+}
+
+/* name text section */
+.name-text-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em;
+}
+
+.name-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+h1, h3 {
+    color: white;
+}
+
+h1 {
+    font-size: clamp(2rem, 8vw, 5rem);
+    letter-spacing: 0.1em;
+    transition: 0.8s ease-in-out;
+}
+
+h1:hover {
+    transform:scale(125%);
+    opacity: 2%;
+}
+
+.first-name {
+    text-decoration: 9px #00BFB2 overline ;
+}
+
+.last-name {
+    text-decoration: 9px #00BFB2 underline;
+    text-underline-offset: 15%;
+}
+
+.job-title {
+    font-size: clamp(0.9rem, 4vw, 2rem);
+    letter-spacing: 0.1em;
+    color: rgb(177, 182, 185);
+}
+
+.work-btn {
+    transform: translateY(30px)
 }
 
 /* media queries */

@@ -34,8 +34,10 @@ a {
 
 /* navigation scroll */
 nav {
-    position: sticky;
+    position: fixed;
     box-shadow: 0px 3px 9px rgb(0, 0, 0, 0.7);
+    width: 100%;
+    background: black;
 }
 
 /* mobile navigation */
@@ -212,7 +214,7 @@ h1:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2em 4em;
+    padding: 4em 4em;
     background: rgb(18, 18, 19);
     gap: 4em;
 }
@@ -221,7 +223,7 @@ h1:hover {
 }
 
 .about-section-left img {
-    height: 350px;
+    height: 300px;
 }
 
 .selfie {
@@ -245,15 +247,20 @@ h1:hover {
 
 .about-section-text {
     color: lightgray;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 2.2rem;
     text-align: justify;
+    word-spacing: -2px;
 }
 
 .download-resume-btn {
     background: black;
     color: white;
     border: 2px solid white;
+}
+
+.download-resume-btn:hover {
+    opacity: 70%;
 }
 
 /* media queries */

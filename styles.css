@@ -102,7 +102,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0em 1em;
 }
 
 .open-btn {
@@ -122,7 +122,7 @@ nav {
 .logo {
     color: #00BFB2;
     font-family: 'Permanent Marker', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 0.2rem;
 }
 

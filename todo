@@ -1,8 +1,8 @@
 -->Color Scheme<--
-Primary Color --> Dark Navy Blue #192A56
-Secondary Color --> Light Gray #D3D3D3
-Emphasis Color --> White #FFFFFF
-Accent Color --> Teal #00BFB2 or Gold #C0B283
+Primary Color --> Black rgb(33, 37, 41)
+Text Color --> Light Gray rgb(177, 182, 185)
+Link Color --> Black rgb(8, 3, 4)
+Accent or Background Color --> Light Gray rgb(177, 182, 185)
 
 -->Font Family<--
 Primary --> Monsterrat 400

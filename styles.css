@@ -152,7 +152,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 4em;
+    padding: 3em;
 }
 
 .name-text-wrapper {
@@ -180,7 +180,7 @@ h1, h3 {
 }
 
 h1 {
-    font-size: clamp(2rem, 8vw, 5rem);
+    font-size: clamp(2.3rem, 8vw, 5rem);
     letter-spacing: 0.1em;
     transition: 0.8s ease-in-out;
 }
@@ -214,7 +214,7 @@ h1:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4em 4em;
+    padding: 4em 2em;
     background: rgb(18, 18, 19);
     gap: 4em;
 }
@@ -241,7 +241,7 @@ h1:hover {
 }
 
 .about-section-header {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 9vw, 4rem);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;'
 }
 
@@ -260,7 +260,8 @@ h1:hover {
 }
 
 .download-resume-btn:hover {
-    opacity: 70%;
+    
+    border:2px solid #00BFB2;
 }
 
 /* media queries */
@@ -277,5 +278,23 @@ h1:hover {
 
     .social-media-icons {
         display: none;
+    }
+}
+
+@media screen and (max-width:988px) {
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section-header {
+        text-align: center;
+    }
+
+    .about-section-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
 }

@@ -264,6 +264,50 @@ h1:hover {
     border:2px solid #00BFB2;
 }
 
+/* skill section */
+.skill-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap: 2em;
+}
+
+.skill-section-header {
+    font-size: clamp(2.5rem, 9vw, 4rem);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.skill-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 6em;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    transition: 0.2s ease-in-out;
+}
+
+.skill:hover {
+    transform: scale(125%);
+}
+
+.dev-icon {
+    height: 60px;
+}
+
+.skill-name {
+    color: gray;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
 /* media queries */
 @media screen and (min-width:760px) {
     .fa-bars {
@@ -296,5 +340,19 @@ h1:hover {
         width: 100%;
         display: flex;
         align-items: center;
+    }
+
+    .about-section-text {
+        color: lightgray;
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+        text-align: justify;
+        word-spacing: -4px;
+    }
+}
+
+@media screen and (max-width:546px) {
+    .skill-group {
+        grid-template-columns: 1fr 1fr;
     }
 }

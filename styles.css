@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Monsterrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: black;
 }
 
@@ -89,6 +89,7 @@ nav {
     border-radius: 4em;
     border: none;
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     background: #00BFB2;
     color: white;
@@ -207,6 +208,7 @@ h1:hover {
 
 .work-btn {
     margin-top: 50px;
+    color: black;
 }
 
 /* about section */
@@ -242,7 +244,7 @@ h1:hover {
 
 .about-section-header {
     font-size: clamp(2.5rem, 9vw, 4rem);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;'
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about-section-text {
@@ -276,7 +278,7 @@ h1:hover {
 
 .skill-section-header {
     font-size: clamp(2.5rem, 9vw, 4rem);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .skill-group {
@@ -349,6 +351,7 @@ h1:hover {
     color: gray;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+    font-size: clamp(0.8rem, 3vw, 1rem);
 }
 
 .project-title {
@@ -365,14 +368,16 @@ h1:hover {
 
 .project-description {
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    
+    
 }
 
 .project-languages {
     color: gray;
     text-transform: uppercase;
-    font-size: 1.4rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: clamp(0.9rem, 3vw, 1.4rem);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .project-buttons {
@@ -395,6 +400,42 @@ h1:hover {
     color: black;
     border: none;
     transition: 0.2s ease-in-out;   
+}
+
+/* contact section */
+.contact-section {
+    color: white;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+
+.contact-section-header {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: clamp(2rem, 3vw, 6rem);
+}
+
+.contact-section-text {
+    text-transform: uppercase;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.email-btn {
+    text-transform: uppercase;
+    color: black;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.email-btn:hover {
+    outline:3px solid #00BFB2;
+    border: 6px solid black;
 }
 
 /* media queries */
@@ -436,7 +477,7 @@ h1:hover {
         font-size: 1.3rem;
         line-height: 2.2rem;
         text-align: justify;
-        word-spacing: -4px;
+        word-spacing: -2px;
     }
 }
 
@@ -457,7 +498,9 @@ h1:hover {
         padding: 2em 0em;
     }
 
-
+   .project-type {
+    font-size: ;
+   }
 }
 
 @media screen and (max-width:1280px) {

@@ -352,6 +352,7 @@ h1:hover {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-size: clamp(0.8rem, 3vw, 1rem);
+    font-weight: 900;
 }
 
 .project-title {
@@ -368,7 +369,7 @@ h1:hover {
 
 .project-description {
     line-height: 2rem;
-    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
     
     
 }
@@ -378,6 +379,7 @@ h1:hover {
     text-transform: uppercase;
     font-size: clamp(0.9rem, 3vw, 1.4rem);
     font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
 
 .project-buttons {
@@ -436,6 +438,39 @@ h1:hover {
 .email-btn:hover {
     outline:3px solid #00BFB2;
     border: 6px solid black;
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 1.5em 0em;
+    font-weight: 900;
+}
+
+.footer-header {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    font-weight: 900;
+}
+
+.footer-social-media-icons {
+    display: flex;
+    gap: 1.5em;
+}
+
+.footer-text {
+    color: white;
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    text-align: center;
+}
+
+.portfolio-footer-link:hover {
+    color: #00BFB2;
 }
 
 /* media queries */
@@ -498,8 +533,8 @@ h1:hover {
         padding: 2em 0em;
     }
 
-   .project-type {
-    font-size: ;
+   .project-description {
+    line-height: 1.5rem;
    }
 }
 

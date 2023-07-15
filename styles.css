@@ -311,7 +311,7 @@ h1:hover {
 /* marquee section */
 .marquee {
     background:rgb(18, 18, 19);
-    height: 150px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;

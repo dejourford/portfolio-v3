@@ -24,11 +24,11 @@
                     <button class="close-btn" onclick="closeMenu()"><i class="fa-solid fa-xmark wtf"></i></button>
                     
                     <ul class="mobile-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Work</a></li>
-                        <a href="#contact"><button class="contact-btn primary-btn">Contact Me</button></a>
+                        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                        <li><a href="#about" onclick="closeMenu()">About</a></li>
+                        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                        <li><a href="#work" onclick="closeMenu()">Work</a></li>
+                        <a href="#contact" onclick="closeMenu()"><button class="contact-btn primary-btn">Contact Me</button></a>
                     </ul>
                 </section>
                 <section class="site-nav">
@@ -40,8 +40,8 @@
                         <ul class="site-links">
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="">Skills</a></li>
-                            <li><a href="">Work</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#work">Work</a></li>
                             <a href="#contact"><button class="contact-btn primary-btn">Contact Me</button></a>
                         </ul>
                     </div>
@@ -90,7 +90,7 @@
             </div>
         </section>
 
-        <section class="skill-section">
+        <section class="skill-section" id="skills">
             <h3 class="skill-section-header">Skills</h3>
             <div class="skill-group">
                 <div class="skill">
@@ -133,8 +133,115 @@
             </div>
         </section>
         <!-- marquee scrolling text section -->
-        <section class="marquee">
+        <section class="marquee work-marquee" id="work">
             <li class="marquee-item" id="marquee1">work work work</li>
+        </section>
+
+        <!-- projects section -->
+        <section class="projects-section">
+            <section class="project">
+                <div class="project-left">
+                    <div class="project-header">
+                        <h3 class="project-type">E-Commerce Website</h3>
+                        <h2 class="project-title">de'jour e-commerce</h2>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">This project is a fully responsive E-Commerce site 
+                            where the client can browse the site for different items in different categories,
+                            view items and its details, add items to cart, and proceed to checkout.
+                            Upon checkout, the client is prompted to enter an email address and after checkout,
+                            the client is alerted that the order has been processed. The local storage is then 
+                            cleared and the client is redirected back to the home page</p>
+                        <div class="project-languages">html, css, Javascript</div>
+                        <div class="project-buttons">
+                            <button class="live-btn primary-btn"><a href="">Live Site</a></button>
+                            <button class="code-base-btn primary-btn"><a href="">Code Base</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjM4NDZjZTRlM2Q4NzdmMWEyODk0NDhkM2I1OWY5NzAxNTViZjUzYiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/PiE21PwUQ3xYAu51fs/giphy.gif" alt="" class="project-gif">
+                </div>
+                
+                
+            </section>
+
+            <section class="project">
+                <div class="project-left">
+                    <div class="project-header">
+                        <h3 class="project-type">Website</h3>
+                        <h2 class="project-title">carme rental car</h2>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">CarMe Rental Car is a fully responsive car rental website with
+                            different pages. The layout is created using flexbox and grid. Using DOM manipulation,
+                            the client is able to dynamically view a car and its specifications.</p>
+                        <div class="project-languages">html, css, Javascript</div>
+                        <div class="project-buttons">
+                            <button class="live-btn primary-btn"><a href="">Live Site</a></button>
+                            <button class="code-base-btn primary-btn"><a href="">Code Base</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <img src="https://media.giphy.com/media/S1tkPqDbPNaCPc5yoo/giphy.gif" alt="" class="project-gif">
+                </div>
+                
+                
+            </section>
+
+            <section class="project">
+                <div class="project-left">
+                    <div class="project-header">
+                        <h3 class="project-type">Client Website</h3>
+                        <h2 class="project-title">septien entertainment</h2>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">This project is a fully responsive website for a local singing agency.
+                            I developed this site as a prototype to be submitted for approval. It's created using HTML, CSS, 
+                            Javascript, and FontAwesome.</p>
+                        <div class="project-languages">html, css, Javascript</div>
+                        <div class="project-buttons">
+                            <button class="live-btn primary-btn"><a href="">Live Site</a></button>
+                            <button class="code-base-btn primary-btn"><a href="">Code Base</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmRmMzdlNjYyNmNmYzE1Yzc4NjQ2MzEzNTFlZjY0NDEzYTM4YWM5ZiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/UVud5VObXSO4X05vpS/giphy.gif" alt="" class="project-gif">
+                </div>
+                
+                
+            </section>
+
+            <section class="project">
+                <div class="project-left">
+                    <div class="project-header">
+                        <h3 class="project-type">Financial Website</h3>
+                        <h2 class="project-title">blkcard credit card</h2>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">This project is a fully responsive React application which utilizes React Router.
+                            This site is a clone of a design from Dribbble and is aimed at showcasing my abilities of transforming a 
+                            design or mockup into actual code. </p>
+                        <div class="project-languages">react, react-router, Javascript</div>
+                        <div class="project-buttons">
+                            <button class="live-btn primary-btn"><a href="">Live Site</a></button>
+                            <button class="code-base-btn primary-btn"><a href="">Code Base</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTQ3N2Y4ODZlMDI1YTUxODZkYjI0ODFmMWY0NmVkNzc1NGYyNzEzNyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/zUExl1rjVx8OTB4jS7/giphy.gif" alt="" class="project-gif">
+                </div>
+                
+                
+            </section>
+        </section>
+
+        <!-- marquee scrolling text section -->
+        <section class="marquee contact-marquee" id="contact">
+            <li class="marquee-item" id="marquee1">contact contact contact</li>
         </section>
     </div>
     <script src="script.js"></script>

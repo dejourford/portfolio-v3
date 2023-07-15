@@ -308,6 +308,27 @@ h1:hover {
     font-weight: 900;
 }
 
+/* marquee section */
+.marquee {
+    background:rgb(18, 18, 19);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    overflow: hidden;
+}
+
+
+.marquee-item {
+    color: white;
+    font-family: 'Permanent Marker';
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    white-space: nowrap;
+}
+
 /* media queries */
 @media screen and (min-width:760px) {
     .fa-bars {

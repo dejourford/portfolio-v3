@@ -461,6 +461,7 @@ footer {
 .footer-social-media-icons {
     display: flex;
     gap: 1.5em;
+    color: black;
 }
 
 .footer-text {

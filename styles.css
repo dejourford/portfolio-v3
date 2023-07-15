@@ -317,6 +317,7 @@ h1:hover {
     align-items: center;
     gap: 4em;
     overflow: hidden;
+    padding: 5em 0em;
 }
 
 
@@ -327,6 +328,73 @@ h1:hover {
     font-size: 4rem;
     letter-spacing: 1rem;
     white-space: nowrap;
+}
+
+/* project section */
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    padding: 4em 0em;
+    color: white;
+    width: 80%;
+    gap: 4em;
+}
+
+.project-type {
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.project-title {
+    font-size: clamp(2rem, 9vw, 3.5rem);
+    font-family: 'Permanent Marker';
+    color:#00BFB2;
+}
+
+.project-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.project-description {
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.project-languages {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 2em;
+}
+
+.live-btn {
+    border: 2px solid black;
+    color: black;
+}
+
+.code-base-btn {
+    background: transparent;
+    border: 2px solid white;
+}
+
+.code-base-btn:hover {
+    background: #00BFB2;
+    color: black;
+    border: none;
+    transition: 0.2s ease-in-out;   
 }
 
 /* media queries */
@@ -376,4 +444,35 @@ h1:hover {
     .skill-group {
         grid-template-columns: 1fr 1fr;
     }
+
+    .dev-icon {
+        height: 50px;
+    }
+
+    .live-btn, .code-base-btn {
+        font-size: 0.8rem;
+    }
+
+    .marquee {
+        padding: 2em 0em;
+    }
+
+
+}
+
+@media screen and (max-width:1280px) {
+    .project {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .projects-section {
+        padding: 0em;
+        
+    }
+
+   .project-gif {
+    width: 100%;
+   }
 }
